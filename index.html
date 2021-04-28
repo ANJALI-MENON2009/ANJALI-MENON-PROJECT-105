@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Project 104- Face Recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">   
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+ 
+  <body style="background-color:deeppink;">
+    <center>
+      <h1 style="color:white; font-weight:bold; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 45px;"> Face Recognition </h1>
+      <br> 
+      <p id="p" style="font-size: 22px;color:yellow; font-weight:bold;font-family: 'Courier New', Courier, monospace
+      ;">Model is trained to identify the following people: </p><br> <br>
+      <p  style="font-style: oblique;font-family: Georgia, 'Times New Roman', Times, serif; background-color:rgb(3, 248, 228); width: 300px;" id="name">
+        My Father
+      </p>
+      <br> 
+     
+      <p class="pClass" style="font-style: oblique;font-family: Georgia, 'Times New Roman', Times, serif;background-color:rgb(3, 248, 228); width: 300px;" id="name">
+        My Mother
+      </p>
+      
+      <br> 
+      <p class="pClass" style="font-style: oblique;font-family: Georgia, 'Times New Roman', Times, serif;background-color:rgb(3, 248, 228); width: 300px;" id="name">
+       My Elder Brother
+      </p>
+     
+      <br> 
+      <p class="pClass" style="font-style: oblique;font-family: Georgia, 'Times New Roman', Times, serif;background-color:rgb(3, 248, 228); width: 300px;" id="name">
+        Me
+      </p>
+     <br> 
+     <br> <br>
+     <label>Your photo will appear like this - </label>
+     <div id="camera"></div>
+     <br><br>
+     <div id="result"></div>
+     <br><br>
+      <button onclick="takeSnapshot()" class="btn">Capture Image</button>
+    </button>
+     <br> <br>
+     <button onclick="identifyImage()" class="btn1">Identify Image</button>
+     <br><br>
+
+     <br><br>
+    
+      <h4 style="padding:20px;" class="footer_div">
+       <span id="object_name_text" >Object : <span id="object_name"></span> </span>
+       <br><br><br>
+        <span id="accuracy_value_text" >Accuracy : <span id="accuracy_value"></span>  </span>
+        <br>
+        <br>
+      </h4>
+   <br> <br>
+    </center>
+    <script src="main.js"></script>  
+    </body>
+   
+  </html>
